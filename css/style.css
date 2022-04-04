@@ -1,0 +1,966 @@
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                                                                                            --*/
+/*--                                                   DÉCLARATIONS GÉNÉRALES                                                   --*/
+/*--                                                                                                                            --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+*
+{
+	margin: 0;
+}
+
+body
+{
+	font-family: Cera pro;
+	font-weight: 300;
+	font-size: 12pt;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                                                                                            --*/
+/*--                                                      CONTENU DU SITE                                                       --*/
+/*--                                                                                                                            --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                HEADER : MENU DE NAVIGATION                                                 --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+header
+{
+	background-color: #C0A6FF;
+	padding: 1% 0 1% 0;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	margin: auto;
+}
+
+nav ul
+{
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	margin: auto;
+
+}
+
+nav img
+{
+	width: 25px;
+	padding-right: 50px;
+
+}
+
+nav li
+{
+	margin-top: 10px;
+	padding-right: 50px;
+	padding-left: 0;
+	text-align: right;
+}
+
+nav a
+{
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+
+}
+
+nav a:hover
+{
+	color: #F5BFFF;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                    SECTION 1 : HERO                                                        --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#hero
+{
+	padding-top: 60px;
+
+}
+
+
+
+/*------------------------------------------------------ D1 : Landing Page -------------------------------------------------------*/
+
+#landing
+{
+	background-image: url("../img/Portrait WIP.png");
+	background-size: 300px;
+	background-position: center;
+	text-align: center;
+	padding: 30px 0 30px 0;
+}
+
+#landing img
+{
+	text-align: center;
+}
+
+h1
+{
+	font-size: 22pt;
+	font-weight: bold;
+	font-family: Bungee Shade;
+	color: #6AAEFF;
+	text-shadow: white 0px 0px 5px;
+
+}
+
+/*-------------------------------------------------------- D2 : About ------------------------------------------------------------*/
+
+#about
+{
+	display: flex;
+	background-image: url(../img/bg.png);
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+h2
+{
+	font-family: Bungee Shade;
+	letter-spacing: 2px;
+	padding: 70px 0 30px 0;
+	text-align: center;
+	font-size: 24pt;
+
+}
+
+#about h2
+{
+color: #C0A6FF;
+}
+
+.left
+{	
+	width: 50%;
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+#about p
+{
+	margin: 40px
+}
+
+#about q
+{
+	font-family: Josefin Sans;
+	font-size: 16pt;
+	color: #C0A6FF;
+	font-weight: bold;
+}
+
+#lienportfo
+{
+	text-align: center;
+}
+
+
+#lienportfo a
+{
+	border: 3px solid;
+	border-radius: 30px;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14pt;
+
+}
+
+#lienportfo a:hover
+{
+	background: linear-gradient(#6AAEFF, #C0A6FF, #F5BFFF, #FFC56A);
+	color: white;
+	padding: 13px;
+}
+
+
+.right
+{
+	width:  30%;
+	text-align: center ;
+	padding: 50px 0 50px 0;
+	margin: 50px 0 0 100px;
+	background-color: lavender;
+	border-radius: 45px;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                               SECTION 2 : COMPÉTENCES                                                      --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#skills h2
+{
+	color: #F5BFFF;
+}
+
+#skill-fams
+{
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 30px;
+}
+
+#skill-fams article
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#skill-fams div
+{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+	background-image: url(../img/fla.png);
+	background-size: 150px;
+	background-repeat: no-repeat;
+	background-position: top center;
+
+}
+
+#skill-fams i
+{
+	font-size: 4em;
+	padding-top: 40px;
+	color: white;
+}
+
+#skill-fams h3
+{
+	color: white;
+	font-size: 20pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#skill-fams ul
+{
+	list-style-type: none;
+	font-size: 10pt;
+	line-height: 30px;
+	text-align: left;
+}
+
+
+#design-skills div
+{
+	margin-left: 20px;
+}
+
+#web-skills div
+{
+	margin-left: 20px;
+}
+
+#marketing-skills ul
+{
+	margin-left: -20px;
+}
+
+#social-skills ul
+{
+	margin-left: -20px;
+}
+
+progress
+{ 
+  width: 50px; 
+  height: 10px;
+  -webkit-appearance : none;
+  padding-left: 10px;
+}
+
+::-webkit-progress-bar {
+   background-color: whitesmoke;
+   border-radius: 10px;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+::-webkit-progress-value 
+{
+	background-color: #F5BFFF;
+	border-radius: 10px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                SECTION 3 : FORMATION                                                       --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#education
+{
+	background-color: floralwhite;
+	padding-bottom: 30px;
+}
+
+#education h2
+{
+	color: #FFC56A;
+}
+
+#education-steps 
+{
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+}
+
+#education-steps div
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+#education-steps ul
+{
+	margin-top: 20px;
+}
+
+#education-steps li
+{
+	list-style-type: none;
+	margin-left: -40px;
+	line-height: 30px;
+}
+
+#education-steps i
+{
+	padding-right: 20px;
+}
+
+#lycée
+{
+	background-color: white;
+	border-radius: 45px;
+}
+
+#lycée ul
+{
+	margin-top: 45px;
+}
+
+#prépa
+{
+	background-color: white;
+	border-radius: 45px;
+}
+
+#audencia
+{
+	background-color: white;
+	border-radius: 45px;
+}
+
+#altrh
+{
+	background-color: #FFC56A;
+	border-radius: 45px;
+}
+
+#altrh h3
+{
+	color: white;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                SECTION 4 : EXPÉRIENCE                                                      --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#xppro
+{
+	background-color: aliceblue;
+	padding-bottom: 30px;
+}
+
+#xppro h2
+{
+	color: #6AAEFF;
+}
+
+#xppro div
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#xppro div:hover
+{
+	transform: scale(1.1);
+	box-shadow: 2px 2px 10px lightgray;
+	transition-duration: 1.0s;
+}
+
+#xppro h3
+{
+	padding-bottom: 20px;
+}
+
+#xppro li
+{
+	margin-left: -10px;
+	line-height: 30px;
+}
+
+#freelance
+{
+	padding-left: 100px;
+	margin-right: 600px;
+	background-color: #6AAEFF;
+	border-radius: 0 200px 200px 0;
+}
+
+#freelance h3
+{
+	color: white;
+}
+
+#chargcom
+{
+	margin-right: 300px;
+	padding-left: 300px;
+	background-color: rgba(35, 120, 255, 0.1);
+	border-radius: 0 200px 200px 0;
+}
+
+#officeman
+{
+	margin-left: 600px;
+	padding-left: 150px;
+	background-color: white;
+	border-radius: 200px 0 0 200px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                SECTION 5 : INTERESTS                                                       --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#hobbies
+{
+	background-color: lavender;
+	padding-bottom: 60px;
+}
+
+#hobbies h2
+{
+	color: #C0A6FF;
+}
+
+#hobbies div
+{
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+#hobbies article
+{
+	text-align: center;
+}
+
+#hobbies i
+{
+	font-size: 3em;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#hobbies i:hover
+{
+color: #C0A6FF;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                 SECTION 6 : CONTACT                                                        --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#contact
+{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+
+
+#contact h2
+{
+	color: #F5BFFF;
+}
+
+#contact form
+{
+	background-color: lavenderblush;
+	border-radius: 45px;
+	margin-left: 50px;
+	padding: 30px;
+}
+
+#contact h3
+{
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+
+form input
+{
+	border: none;
+	border-radius: 15px;
+	line-height: 18pt;
+	margin: 4px;
+}
+
+.resizeinput
+{
+	width: 30%;
+}
+
+.resizemail
+{
+	width: 62%;
+}
+
+::placeholder
+{
+	font-family: cera pro;
+	font-weight: lighter;
+	padding-left: 15px;
+}
+
+#who
+{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#who select
+{
+	border: none;
+	border-radius: 15px;
+	margin: 4px;
+	padding: 4px;
+}
+
+#how
+{
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#more textarea
+{
+	border: none;
+	border-radius: 15px;
+	line-height: 18pt;
+	margin: 4px;
+}
+
+#submit input 
+{
+	padding: 1.5% 3% 1.5% 3%;
+	border-radius: 20px;
+	color: #F5BFFF;
+	font-weight: bold;
+	background-color: white;
+}
+
+#submit input:hover
+{
+	background-color: #F5BFFF;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+#soundtrack iframe
+{
+	text-align: center;
+	padding: 50px;
+	margin: 250px 0 0 50px;
+	background-color: floralwhite;
+	border-radius: 45px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                        FLÈCHE                                                              --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#flèche
+{
+	color: #C0A6FF;
+	font-size: 3em;
+	position: fixed;
+	z-index: 5;
+	right: 30px;
+	bottom: 30px;
+}
+
+#flèche:hover
+{
+	color: #F5BFFF;
+	transform: scale(1.3);
+	transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                                                                                            --*/
+/*--                                              VERSION RESPONSIVE MOBILLE                                                    --*/
+/*--                                                                                                                            --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 375px)
+{
+
+
+	body
+	{
+		font-family: Cera pro;
+		font-weight: 300;
+		font-size: 10pt;
+	}
+
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                HEADER : MENU DE NAVIGATION                                                 --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+	header
+	{
+		width: 100px;
+		background-color: rgba(192, 166, 255, 0.3);
+		padding-bottom: 15px;
+	}
+
+	nav
+	{
+		padding-bottom: 15px;
+	}
+
+	nav ul
+	{
+		justify-content: flex-start;
+		flex-direction: column;
+		margin-left: -20px;
+
+
+	}
+	
+	nav li
+	{
+		font-size: 8pt;
+		flex-wrap: wrap;
+		text-align: left;
+
+	}
+
+	nav img
+	{
+	width: 25px;
+	padding-top: 5px;
+	padding-left: 20px;
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                    SECTION 1 : HERO                                                        --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+	#hero
+	{
+	padding-top: 0px;
+	}
+
+
+	/*------------------------------------------------------ D1 : Landing Page -------------------------------------------------------*/
+
+	#landing
+	{
+		background-size: 250px;
+	}
+
+	#landing img
+	{
+		margin-left: 100px;
+		width: 60%;
+	}
+
+	h1
+	{
+		font-size: 18pt;
+	}
+
+	/*-------------------------------------------------------- D2 : About ------------------------------------------------------------*/
+
+	h2
+	{	
+		margin-left: 8px;
+	}
+
+	#about
+	{
+		flex-direction: column;
+	}
+
+
+	.left
+	{	
+		width: 100%;
+	}
+
+
+	#lienportfo
+	{
+		text-align: center;
+	}
+
+	#about iframe
+	{
+		width: 250px;
+		height: 350px;
+	}
+
+	.right
+	{
+		width:  90%;
+		padding: 30px 0 25px 0;
+		margin: 0 5px 40px 20px;
+	}
+
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                               SECTION 2 : COMPÉTENCES                                                      --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+	#skill-fams
+	{
+		width: 375px;
+		flex-wrap: wrap;
+		margin: auto;
+	}
+
+	#skill-fams article
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#design-skills
+	{
+		margin-left: -15px;
+	}
+
+	#web-skills
+	{
+		margin-left: -15px;
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                SECTION 3 : FORMATION                                                       --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+	#education-steps 
+	{
+		flex-direction: column-reverse;
+	}
+
+	#education-steps div
+	{
+		margin: auto;
+		margin-bottom: 30px;
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                SECTION 4 : EXPÉRIENCE                                                      --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+	#xppro-steps
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#xppro h3
+	{
+		margin-left: 10px;
+
+	}
+
+	#xppro div
+	{
+		padding: 45px 30px 30px 30px;
+		margin-top: 5px;
+	}
+
+	#xppro li
+	{
+		margin-left: -10px;
+		line-height: 20px;
+		padding:  5px;
+	}
+
+	#freelance
+	{
+		padding-left: 30px;
+		margin:  auto;
+		background-color: #6AAEFF;
+		border-radius: 100px
+	}
+
+	#chargcom
+	{
+		padding-left: 30px;
+		margin:  auto;
+		background-color: rgba(35, 120, 255, 0.1);
+		border-radius: 100px;
+	}
+
+	#officeman
+	{
+		padding-left: 30px;
+		margin:  auto;
+		background-color: white;
+		border-radius: 100px;
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                SECTION 5 : INTERESTS                                                       --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+	#hobbies i
+	{
+		font-size: 5em;
+		margin: 0 30px 0 30px;
+	}
+
+	#hobbies p
+	{
+		font-size: 12pt;
+	}
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                 SECTION 6 : CONTACT                                                        --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+	#contact
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contact form
+	{
+		width: 70%;
+		margin: auto;
+	}
+
+	.resizeinput
+	{
+		width: 60%;
+	}
+
+	.resizemail
+	{
+		width: 90%;
+	}
+
+
+	#more textarea
+	{
+		flex-wrap: wrap;
+		width: 250px;
+	}
+
+	#soundtrack iframe
+	{
+		width: 60%;
+		margin:  25px;
+	}
+
+
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+	/*--                                                        FLÈCHE                                                              --*/
+	/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+	#flèche
+	{
+		color: #C0A6FF;
+		font-size: 3em;
+		position: fixed;
+		z-index: 5;
+		right: 30px;
+		bottom: 30px;
+	}
+
+	#flèche:hover
+	{
+		color: #F5BFFF;
+		transform: scale(1.3);
+		transition-duration: 0.5s;
+	}
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*--                                                                                                                            --*/
+/*--                                            BANQUE DE DONNÉES CHARTE GRAPHIQUE                                              --*/
+/*--                                                                                                                            --*/
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* 
+
+COULEURS 
+
+	#6AAEFF 	BLEU
+	#C0A6FF 	VIOLET
+	#F5BFFF 	ROSE
+	#FFC56A 	JAUNE
+
+	linear-gradient(#6AAEFF, #C0A6FF, #F5BFFF, #FFC56A)
+
+
+
+RÉSERVOIR POLICES
+
+	font-family:  Cera pro; 	pour la body
+	font-family:  Josefin Sans;		pour les citations
+	font-family:  Bungee Shade;		pour les titres de section (H2)
+	
+*/
